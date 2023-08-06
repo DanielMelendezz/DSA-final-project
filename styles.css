@@ -1,0 +1,113 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+/* creates the body element */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: calc(100%);
+    height: calc(100%);
+}
+
+.mapbox-directions-instructions {
+    overflow: auto !important;
+}
+
+div#geocoder-search {
+    width: 300px;
+}
+/* creates the marker the goes on the mapbox api */
+.marker {
+    font-size: 3em;
+    color: #bb0000;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+p {
+    z-index: 4;
+    font-size: 14px;
+    color: white;
+
+}
+
+#nav{
+    height: 100%;
+    width: 300px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 12px;
+    position:relative;
+    text-align: left;
+}
+
+.buttons{
+    display: flex; 
+    flex-direction: column; 
+}
+/* creates the css style for my Nav */
+.myNav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(68, 68, 68, 0.525);
+    text-align: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    font-size: 13px;
+    border-radius: 0.7em;
+
+}
+.information {
+    height: 13%;
+    width: 250px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 3;
+    background-color: rgba(68, 68, 68, 0.525);
+    padding-top: 15px;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 0.7em;
+
+}
+
+.nav-right{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* styles the button for the search bar*/
+button {
+    z-index: 3;
+    background-color: white;
+    font-size: 20px;
+    justify-content: center;
+    margin: .3em;
+    padding: 10px;
+    width: 290px;
+    border-radius: 0.7em;
+}
+.mapboxgl-ctrl-geocoder {
+    width: 305px; /* Set the desired width here */
+}
+
